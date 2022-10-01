@@ -134,3 +134,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # EMAIL_HOST_PASSWORD = 'hfskngikroinvurw'
 # EMAIL_PORT = 587 
 # EMAIL_USE_TLS = True
+
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+]
