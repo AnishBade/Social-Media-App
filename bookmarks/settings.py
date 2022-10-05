@@ -25,7 +25,7 @@ SECRET_KEY = '+_)u@u+*w6-aj*0516g87a2zcty633o4%95%b%b(bbb(4@iohx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 LOGIN_REDIRECT_URL = 'dashboard' 
@@ -35,6 +35,8 @@ LOGOUT_URL = 'logout'
 # Application definition
 
 INSTALLED_APPS = [
+    'django_extensions',
+    'social_django',
     'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
