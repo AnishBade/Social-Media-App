@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+import django
+from django.utils.encoding import force_str
+django.utils.encoding.force_text = force_str
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -35,7 +37,7 @@ LOGOUT_URL = 'logout'
 # Application definition
 
 INSTALLED_APPS = [
-    'django_extensions',
+    
     'social_django',
     'account.apps.AccountConfig',
     'django.contrib.admin',
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     
 ]
 

@@ -1,0 +1,12 @@
+while doing python manage.py migrate while Adding social authentication to your site:
+ImportError: cannot import name 'force_text' from 'django.utils.encoding'
+solution:
+https://stackoverflow.com/questions/70382084/import-error-force-text-from-django-utils-encoding
+
+
+page 132 error:
+ImportError: cannot import name 'url' from 'django.conf.urls'
+solution:
+http://javaatpoint.com/solved-importerror-cannot-import-name-url-from-django-conf-urls/
+also this:
+https://stackoverflow.com/questions/70319606/importerror-cannot-import-name-url-from-django-conf-urls-after-upgrading-to
