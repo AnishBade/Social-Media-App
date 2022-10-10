@@ -15,3 +15,6 @@ https://stackoverflow.com/questions/70319606/importerror-cannot-import-name-url-
 occasional problem on using ssl :
 possible solution:(not tried yet)
 https://timonweb.com/django/https-django-development-server-ssl-certificate/
+
+while opening with https,sometimes https://127.0.0.1:8000 dont work, 
+solution: use https://mysite.com:127.0.0.1:8000 instead
